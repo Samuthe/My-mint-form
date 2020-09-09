@@ -1,0 +1,232 @@
+<!Doctype html>
+<html lang="en">
+    <title>
+        Standard form
+        </title>
+    <head>
+    <meta charset="utf-8">
+    <h1>
+        The standard
+    </h1>
+
+    <body>
+    <nav class="links">
+        <a href="">home-page</a>
+        <a href="">item-bizz</a>
+        <a href="">collection</a>
+    </nav><br>
+
+    <div class="container">
+        <h2 >Create your standard account</h2>
+        <div class="description">
+        <p>One account for everything. Learn more<a href> here</a></p>
+        <p>You already have an account? Sign in here.</p>
+        </div>
+
+        <form id="signup-form">
+            <div class="form">
+              <label for="address">Email address:</label>
+              <input type="text" label id="address" name="address"
+                class="form-control" placeholder="Enter your email address" required></div><br>
+
+             <form id="phone-contact">
+            <div class="form">
+              <label for="phone">Phone(recommended)</label>
+              <input type="text" label id="phone" name="phone"
+                class="form-control" placeholder="Enter your phone number" required></div><br>
+                <div class="phone-p">
+                    <p style="font-size: 15px; line-height: 10px;">Standard call, messaging or data rates may apply.</p>
+
+               <form id="password">
+            <div class="form">
+              <label for="pwd">password:</label>
+              <input type="password" label id="pwd" name="pwd"
+                class="form-control" placeholder="Enter your password" required></div><br>
+
+                <form action="/action_page.php">
+                    <button type="submit">Create Account</button>
+              </form>
+            </form>
+            </div>
+                </form>
+                </body>
+            </html>
+
+            <style>
+                :root {
+                  --color-white: rgb(54, 52, 52);
+                  --color-darkblue: #2e2e5a;
+                  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+                  --color-green: #37af65;
+                }
+                
+                *,
+                *::before,
+                *::after {
+                  box-sizing: border-box;
+                }
+                
+                body {
+                  font-family: 'Poppins', sans-serif;
+                  font-size: 1rem;
+                  font-weight: 100;
+                  line-height: 1.8;
+                  color: var(--color-grey);
+                  margin: 0;
+                  text-align: center;
+                }
+
+                body::before {
+                    content: '';
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    z-index: -1;
+                    background: var(--color-darkblue);
+                    background-image: linear-gradient(
+                        115deg,
+                        rgba(230, 230, 238, 0.8),
+                        rgba(177, 177, 230, 0.7)
+                        ),
+                        url('');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                .links{
+                    line-height: 10px;
+                    word-spacing: 30px;
+                    text-align: center;
+                }
+
+                button{
+                    padding: 6px;
+                    font-size: 20px;
+                    border-radius: 10px;
+                    background-color: grey;
+                }
+
+                button:hover{
+                    color: greenyellow;
+                }
+
+                 a{
+                    color: rgb(36, 35, 35);
+                    text-decoration: none;
+                    font-style: var(--color-darkblue);
+                }
+                a:visited{
+                    color: rgb(240, 233, 144);
+                }
+                a:hover{
+                    color: hotpink;
+                }
+                a:active{
+                    color: blueviolet;
+                }
+
+                h1 {
+                    font-weight: 400;
+                    line-height: 2.2;
+                    text-align: center;
+                    }
+
+                p {
+                    font-size: 1.125rem;
+                    word-spacing: 0px;
+                    line-height: 12px;
+                }
+
+                h1,
+                p {
+                    margin-top: 0;
+                    margin-bottom: 0.5rem;
+                    }
+
+                label {
+                    display: flex;
+                    display: block;
+                    float: left;
+                    width: 10em;
+                    margin-left: 8em;
+                    margin-right: 0em;
+                    align-items: center;
+                    font-size: 1.125rem;
+                    margin-bottom: 1.5rem;
+                    }
+
+                input,
+                select,
+                textarea {
+                    margin: 0;
+                    font-family: inherit;
+                    font-size: inherit;
+                    line-height: inherit;
+                    }
+
+                input {
+                    padding: 6px;
+                    font-size: 15;
+                    border-radius: 10px;
+                    }
+                    
+                input[type=text] {
+                    background-color: #dbe1e2;
+                    color: hsl(67, 19%, 92%);
+                    left: 60px;
+                    height: 50px;
+                }
+
+                input[type=password] {
+                    background-color:hsl(60, 4%, 16%);
+                    color: hsl(67, 19%, 92%);
+                    left: 60px;
+                    height: 50px;
+                }
+
+                .container {
+                    width: 100%;
+                    margin: 5.125rem auto 0 auto;
+                    background-color: rgb(211, 212, 203);
+                    line-height: 50px;
+                    margin-top: 1rem;
+                    }
+
+                    @media (min-width: 500px) {
+                .form {
+                    padding: 1.0rem;
+                }
+                }
+
+                .form{
+                    margin: 1 auto 0.25rem auto;
+                    padding: 0.25rem;
+                    }
+
+                    form{
+                        background: var(--color-darkblue-alpha);
+                    padding: 2.5rem 0.625rem;
+                    } 
+
+                @media (min-width: 768px) {
+                    .container {
+                        max-width: 720px;
+                        }
+                        }
+
+                .header {
+                    padding: 0 0.625rem;
+                    margin-bottom: 1.875rem;
+                    }
+
+                .description {
+                    font-style: italic;
+                    font-weight: 250;
+                    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+                    }
+
+                    
+            </style>
